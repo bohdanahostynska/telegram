@@ -12,7 +12,7 @@ $('#button') .on('click',function(e){
         $('#error-email').text('Enter your email')
     }
 
-
+console.log('DFGDF');
     $.ajax({
         url:'ajax/telegram.php',
         type:'POST',
@@ -20,6 +20,7 @@ $('#button') .on('click',function(e){
         data:{'email':email,'name':name},
         dataType:'html',
         success:function(){
+            console.log(123);
             $('#name').val('');
             $('#email').val('');
         }
